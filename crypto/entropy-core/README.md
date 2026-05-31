@@ -1,8 +1,8 @@
-# Entropy Core (rev)
+# Entropy Core (crypto)
 
 | Field    | Value                                                            |
 | -------- | ---------------------------------------------------------------- |
-| Category | rev                                                              |
+| Category | crypto                                                           |
 | Target   | `entropy_core.exe` — 134 KB, PE32+ console x86-64 (MinGW GCC 15.1.0) |
 | Flag     | `THEM?!CTF{Entr0py_C0r3_VM_S0_Funny!}`                           |
 
