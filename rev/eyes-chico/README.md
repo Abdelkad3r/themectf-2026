@@ -1,4 +1,4 @@
-# 1983 (rev)
+# Eyes Chico (rev)
 
 | Field    | Value                                                            |
 | -------- | ---------------------------------------------------------------- |
@@ -290,10 +290,16 @@ THEM?!CTF{R3V3R53_3X3CU710N_VM_W17H_MU7471NG_R3G1573R5_4ND_C0N7R0L_FL0W_FL4773N1
 
 ## Defender notes
 
-* **The "1983" title is Orwell-adjacent flavour.** The mutating-state
-  VM is Big Brother reading your registers; the flag's `R3V3R53
-  3X3CU710N` is the "memory hole" theme. As a CTF cue, that's it — the
-  binary's interesting work is in the VM, not in the title.
+* **The "Eyes Chico" title is a *Money Heist* (`La Casa de Papel`) cue.**
+  The Inspector's "*¡Ojos, chico, ojos!*" line — "Eyes, kid, eyes" — is
+  about keeping eye contact under interrogation. As a CTF hint that's
+  pointing you at the right *kind* of eyes: the binary's static
+  surface is unreadable (mutating registers, CFG flattening, double-
+  indirected state index), so you have to *look* at it differently —
+  with an emulator watching the writes, not a disassembler trying to
+  reason about them. The binary filename `1983.exe` is a separate
+  Orwell-adjacent throwaway; the *challenge*'s title is the one that
+  points at the solve.
 * **Reverse-execution VMs sound scary; they're not, dynamically.**
   CFG flattening + mutating registers + indirected state index all
   punish *static* analysis (you cannot constant-fold past
